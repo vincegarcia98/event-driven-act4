@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="garcia.css">
+    <title>Calandar</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+    <h1> Hello!</h1>
+    <h2> Please enter the following: </h2>
+
+    <h4>Month: </h4>
+    <input type="text" id="monthtxt">
+
+    <h4>Starting day of the month: </h4>
+    <input type="text" id="daytxt">
+
+</div>
+
+    <h4 class="spacer"></h4>
+
+<div class="container">
+    <TABLE BORDER=3 CELLSPACING=3 CELLPADDING=3 class="center" id="mytable">
+        <TR>
+        <TD COLSPAN="7" ALIGN=center id="monthlbl"><B></B></TD>
+        </TR>
+        
+        <TR id="myrow">
+        <TD ALIGN=center>Sun</TD>
+        <TD ALIGN=center>Mon</TD>
+        <TD ALIGN=center>Tue</TD>
+        <TD ALIGN=center>Wed</TD>
+        <TD ALIGN=center>Thu</TD>
+        <TD ALIGN=center>Fri</TD>
+        <TD ALIGN=center>Sat</TD>
+        </TR>
+        <TR>
+    
+        
+        </TABLE>
+
+        <h4></h4>
+
+        <button onclick="createcal()">Create Calendar</button>
+
+</div>
+
+</body>
+
+<script>
+
+function createcal(){
+if (document.getElementById("monthtxt").value = "1" ){
+document.getElementById('monthlbl').innerHTML="January";
+} 
+if (document.getElementById("monthtxt").value = "2" ){
+document.getElementById('monthlbl').innerHTML="Febuary";
+}
+if (document.getElementById("monthtxt").value = "3" ){
+document.getElementById('monthlbl').innerHTML="March";
+}
+if (document.getElementById("monthtxt").value = "4" ){
+document.getElementById('monthlbl').innerHTML="April";
+}
+if (document.getElementById("monthtxt").value = "5" ){
+document.getElementById('monthlbl').innerHTML="May";
+}
+if (document.getElementById("monthtxt").value = "6" ){
+document.getElementById('monthlbl').innerHTML="June";
+}
+if (document.getElementById("monthtxt").value = "7" ){
+document.getElementById('monthlbl').innerHTML="July";
+}
+if (document.getElementById("monthtxt").value = "8" ){
+document.getElementById('monthlbl').innerHTML="August";
+}
+if (document.getElementById("monthtxt").value = "9" ){
+document.getElementById('monthlbl').innerHTML="September";
+}
+if (document.getElementById("monthtxt").value = "10" ){
+document.getElementById('monthlbl').innerHTML="October";
+}
+if (document.getElementById("monthtxt").value = "11" ){
+document.getElementById('monthlbl').innerHTML="November";
+}
+if (document.getElementById("monthtxt").value = "12" ){
+document.getElementById('monthlbl').innerHTML="December";
+}
+
+var t = document.getElementById("mytable");
+var trs = t.getElementsByTagName("tr");
+var tds = null;
+
+for (var i=0; i<trs.length; i++)
+{
+    tds = trs[i].getElementsByTagName("td");
+    for (var n=0; n<tds.length;n++)
+    {
+
+    }
+}
+
+}
+
+</script>
+
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Payment Form</title>
+
+</head>
+
+
+<body>
+
+ <div class="container">
+        <h1>Payment Details</h1>
+        
+        <h3>Amount</h3>
+        <input type="text" id="amounttxt">
+        
+        <h3>Payment Type</h3>
+        <input type="radio" name="radAnswer" id="cashbtn">
+        <label for="cash">Cash</label></br>
+        
+        <input type="radio" name="radAnswer" id="cardbtn">
+        <label for="card">Card</label></br>
+        
+        <input type="radio" name="radAnswer" id="cashwcardbtn">
+        <label for="cashwcard">Cash and Card</label></body></br>
+        
+        <h3>Gift Check</h3>
+        <input type="text" id="giftcheck" >
+        
+        <h3>Cash Amount</h3>
+        <input type="text" id="casham">
+        
+        <h3>Card Amount</h3>
+        <input type="text" id="cardam"></br>
+        
+        <button onclick="submit()" id="sumbitbtn">Submit</button>
+        
+        </div>
+
+</body>
+
+
+<script src="func.js"></script>
+
+
+</html>
